@@ -98,12 +98,21 @@ export function StatCardsGrid() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-stretch">
           {/* Left Column: Giant Bold Condensed Poster Typography */}
           <div className="lg:col-span-6 flex flex-col justify-center">
+            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-brand-red/10 text-brand-red text-xs font-semibold tracking-widest uppercase mb-4 w-fit">
+              <span className="w-2 h-2 rounded-full bg-brand-red"></span>
+              Origin Processing & Worldwide Export
+            </div>
+
             <h2 className="text-6xl sm:text-7xl md:text-8xl lg:text-[7.5rem] xl:text-[8.5rem] font-oswald font-black uppercase text-brand-red leading-[0.88] tracking-tight">
               A SUPPLY <br />
               CHAIN <br />
               THAT&apos;S 100% <br />
               TRACEABLE
             </h2>
+
+            <p className="mt-6 text-zinc-700 font-outfit text-base lg:text-lg max-w-lg leading-relaxed">
+              Young and Dufe manages the entire shea butter value chain for you: from wild savannah gathering and eco-processing in Tamale, to laboratory analysis, custom drumming, and direct container export to your port worldwide.
+            </p>
           </div>
 
           {/* Right Column: 2x2 Grid of Stat Cards with Bold White Numbers */}

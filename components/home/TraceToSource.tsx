@@ -39,7 +39,7 @@ export function TraceToSource() {
 
             <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-brand-amber/15 text-brand-brown text-xs font-semibold tracking-widest uppercase mb-4 w-fit">
               <QrCode className="w-4 h-4 text-brand-brown" />
-              Transparent Provenance
+              Origin-To-Container Provenance
             </div>
 
             <h2 className="text-5xl sm:text-6xl lg:text-7xl font-oswald uppercase font-black tracking-tight text-brand-red leading-[1.0] mb-6">
@@ -47,29 +47,26 @@ export function TraceToSource() {
             </h2>
 
             <p className="text-zinc-700 font-outfit text-base lg:text-lg leading-relaxed mb-6">
-              Every shipment of Young and Dufe shea butter, coconut oil, baobab oil,
-              and black soap comes with verified provenance. From GPS-mapped savannah
-              parklands to the exact women&apos;s cooperative processing facility, we
-              provide complete digital batch integrity.
+              Every export shipment of Young and Dufe Shea Butter comes with end-to-end verified provenance. From GPS-mapped savannah parklands to the community processing centers, export packaging, and maritime container seals, we provide complete digital batch integrity for your brand.
             </p>
 
             <div className="space-y-3 mb-8">
               <div className="flex items-start gap-3">
                 <CheckCircle2 className="w-5 h-5 text-emerald-600 shrink-0 mt-0.5" />
                 <span className="text-sm font-outfit text-zinc-800">
-                  <strong>GPS Geolocation:</strong> Trace each harvest to certified organic agroforestry zones.
+                  <strong>GPS Geolocation:</strong> Trace each shea nut collection to certified organic parkland zones.
                 </span>
               </div>
               <div className="flex items-start gap-3">
                 <CheckCircle2 className="w-5 h-5 text-emerald-600 shrink-0 mt-0.5" />
                 <span className="text-sm font-outfit text-zinc-800">
-                  <strong>Cooperative Identification:</strong> Know the specific community and women leaders behind your batch.
+                  <strong>Cooperative Identification:</strong> Know the specific community and women leaders who crafted your batch.
                 </span>
               </div>
               <div className="flex items-start gap-3">
                 <CheckCircle2 className="w-5 h-5 text-emerald-600 shrink-0 mt-0.5" />
                 <span className="text-sm font-outfit text-zinc-800">
-                  <strong>EUDR & Organic Certified:</strong> Full regulatory compliance ready for European & global import.
+                  <strong>EUDR &amp; Phytosanitary Dossier:</strong> Complete export regulatory compliance ready for European &amp; global customs.
                 </span>
               </div>
             </div>

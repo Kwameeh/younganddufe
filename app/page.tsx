@@ -5,6 +5,7 @@ import { HeroVideo } from "@/components/home/HeroVideo";
 import { StatCardsGrid } from "@/components/home/StatCardsGrid";
 import { PartnerMarquee } from "@/components/home/PartnerMarquee";
 import { ProductShowcase } from "@/components/home/ProductShowcase";
+import { TurnkeyExportProcess } from "@/components/home/TurnkeyExportProcess";
 import { SustainabilityAccordion } from "@/components/home/SustainabilityAccordion";
 import { ImpactBanner } from "@/components/home/ImpactBanner";
 import { HighlightsBento } from "@/components/home/HighlightsBento";
@@ -33,6 +34,9 @@ export default function Home() {
 
         {/* 4. Signature Product Showcase (4 Cards) */}
         <ProductShowcase />
+
+        {/* 4.5 Turnkey Export Pipeline */}
+        <TurnkeyExportProcess />
 
         {/* 5. Structural Principles of Sustainability Accordion */}
         <SustainabilityAccordion />

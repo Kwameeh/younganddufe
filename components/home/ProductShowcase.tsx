@@ -9,18 +9,40 @@ export function ProductShowcase() {
   return (
     <section id="products" className="py-20 bg-[#F8F2EC]">
       <div className="container mx-auto px-6 lg:px-12">
+        {/* Section Header */}
+        <div className="text-center max-w-3xl mx-auto mb-14">
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-brand-red/10 text-brand-red text-xs font-semibold tracking-widest uppercase mb-4">
+            Flagship Botanical Export
+          </div>
+          <h2 className="text-4xl sm:text-5xl font-oswald uppercase font-black tracking-tight text-brand-brown leading-tight mb-4">
+            Direct Origin Shea Butter & Companion Botanicals
+          </h2>
+          <p className="text-zinc-600 font-outfit text-base lg:text-lg leading-relaxed">
+            Specialized in turnkey Shea Butter processing and bulk export for global cosmetic and personal care brands. We handle the entire journey from rural wild harvest to containerized maritime freight.
+          </p>
+        </div>
+
         {/* 4 Signature Product Cards */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 items-stretch">
-          {/* Card 1: Shea Butter (Black) */}
+          {/* Card 1: Shea Butter (Black) - Flagship */}
           <Link
             href="/products/shea-butter"
-            className="group bg-[#000000] text-white rounded-3xl p-7 min-h-[580px] lg:min-h-[620px] flex flex-col justify-between transition-all duration-300 hover:scale-[0.98] shadow-lg relative overflow-hidden"
+            className="group bg-[#000000] text-white rounded-3xl p-7 min-h-[580px] lg:min-h-[620px] flex flex-col justify-between transition-all duration-300 hover:scale-[0.98] shadow-xl relative overflow-hidden border-2 border-brand-amber/40"
           >
             <div>
+              <div className="flex items-center justify-between mb-4">
+                <span className="px-2.5 py-1 rounded-md bg-brand-amber text-zinc-950 font-mono text-[11px] font-bold tracking-wider uppercase">
+                  Flagship Export Line
+                </span>
+                <span className="text-[11px] font-mono text-white/70 uppercase">
+                  Bulk Pails & Drums
+                </span>
+              </div>
+
               <div className="relative aspect-[4/3] w-full rounded-2xl overflow-hidden mb-5">
                 <Image
                   src="/products/sheabutter.jpg"
-                  alt="Raw Handcrafted Shea Butter"
+                  alt="Raw Handcrafted Shea Butter for Bulk Export"
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-500"
                 />
@@ -30,16 +52,19 @@ export function ProductShowcase() {
                 SHEA BUTTER
               </h3>
 
-              <div className="space-y-1 text-sm font-outfit text-white/90">
-                <p>100% Unrefined & Steam Refined</p>
-                <p>Grade-A Cosmetic Actives</p>
-                <p>Wild Harvested Karité</p>
+              <div className="space-y-1.5 text-sm font-outfit text-white/90">
+                <p className="font-semibold text-brand-amber">Turnkey Sourcing & Export</p>
+                <p>100% Unrefined & Steam-Refined</p>
+                <p>Grade-A Cosmetic & Food Specs</p>
+                <p className="text-xs text-white/70 pt-1">
+                  Exported in 25kg pails, 190kg steel drums &amp; 20ft/40ft containers directly from Ghana.
+                </p>
               </div>
             </div>
 
             <div className="pt-6 relative z-10 flex items-center justify-between border-t border-white/20 mt-4">
               <span className="text-xs uppercase font-oswald tracking-widest text-brand-amber font-semibold">
-                Explore Shea Butter
+                Explore Shea Butter Export
               </span>
               <ArrowUpRight className="w-5 h-5 text-brand-amber group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
             </div>
@@ -51,16 +76,22 @@ export function ProductShowcase() {
             className="group bg-[#E4A836] text-zinc-950 rounded-3xl p-7 min-h-[580px] lg:min-h-[620px] flex flex-col justify-between transition-all duration-300 hover:scale-[0.98] shadow-lg relative overflow-hidden"
           >
             <div>
+              <div className="flex items-center justify-between mb-4">
+                <span className="px-2.5 py-1 rounded-md bg-zinc-950 text-white font-mono text-[11px] font-bold tracking-wider uppercase">
+                  Consolidated Export
+                </span>
+              </div>
+
               <h3 className="text-3xl font-oswald uppercase font-bold tracking-tight mb-3 text-zinc-950">
                 BAOBAB OIL
               </h3>
 
               <div className="space-y-1 text-sm font-outfit text-zinc-900 font-medium">
-                <p>Intense Hydration</p>
+                <p>Intense Hydration &amp; Cosmetic Active</p>
                 <p>Non Comedogenic (Rating 0)</p>
-                <p>Anti-Ageing Superfruit</p>
+                <p>Cold-Pressed at Origin in Ghana</p>
                 <p className="text-xs text-zinc-800 pt-2 opacity-90">
-                  Harvested with the Widows & Orphans Movement.
+                  Available for consolidated export containers alongside Shea Butter shipments.
                 </p>
               </div>
             </div>
@@ -90,23 +121,25 @@ export function ProductShowcase() {
             className="group bg-[#F7F6F4] text-zinc-900 rounded-3xl p-7 min-h-[580px] lg:min-h-[620px] flex flex-col justify-between transition-all duration-300 hover:scale-[0.98] shadow-lg relative overflow-hidden border border-zinc-200"
           >
             <div>
+              <div className="flex items-center justify-between mb-4">
+                <span className="px-2.5 py-1 rounded-md bg-brand-brown text-white font-mono text-[11px] font-bold tracking-wider uppercase">
+                  Consolidated Export
+                </span>
+              </div>
+
               <h3 className="text-3xl font-oswald uppercase font-bold tracking-tight mb-3 text-zinc-950">
                 COCONUT OIL
               </h3>
 
               <div className="space-y-2 text-xs sm:text-sm font-outfit text-zinc-700 leading-relaxed">
                 <p className="text-xs text-zinc-500 font-medium">
-                  Made by local cooperatives,
+                  Made by coastal women cooperatives,
                 </p>
                 <p className="font-bold text-zinc-900 uppercase font-oswald tracking-wide">
-                  THIS OIL FUNDS CONSERVATION AND BUILDS RESILIENT COMMUNITIES.
+                  100% EXTRA VIRGIN COLD-PRESSED BOTANICAL OIL.
                 </p>
                 <p className="text-xs text-zinc-600">
-                  Every coconut protects the critically endangered{" "}
-                  <strong className="text-zinc-900 uppercase font-oswald tracking-wider">
-                    ROLOWAY MONKEY
-                  </strong>
-                  .
+                  Ready for consolidated maritime freight directly to European and North American ports.
                 </p>
               </div>
             </div>
@@ -136,13 +169,18 @@ export function ProductShowcase() {
             className="group bg-[#8B3A2B] text-white rounded-3xl p-7 min-h-[580px] lg:min-h-[620px] flex flex-col justify-between transition-all duration-300 hover:scale-[0.98] shadow-lg relative overflow-hidden"
           >
             <div>
+              <div className="flex items-center justify-between mb-4">
+                <span className="px-2.5 py-1 rounded-md bg-white text-brand-red font-mono text-[11px] font-bold tracking-wider uppercase">
+                  Export Ready
+                </span>
+              </div>
+
               <h3 className="text-3xl font-oswald uppercase font-bold tracking-tight mb-3 text-white">
                 BLACK SOAP
               </h3>
 
               <p className="text-sm font-outfit text-white/90 leading-relaxed">
-                Made from plant ashes and oils, with no chemicals, making it one
-                of the world&apos;s most sustainable cleansers.
+                Traditional African black soap formulated from organic shea butter and plant ashes. Available in bulk raw blocks or private label bars.
               </p>
             </div>
 

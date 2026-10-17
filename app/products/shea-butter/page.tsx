@@ -41,10 +41,10 @@ export default function SheaButterPage() {
     },
     {
       step: "04",
-      title: "EU Hub – Refinery & Distribution",
+      title: "Maritime Export & Global Hub Delivery",
       image: "/data/euhub.jpg",
       description:
-        "Batches are shipped directly to our European distribution hub in Halfweg, Netherlands, where physical filtration, micro-biological testing, and cold-storage warehousing guarantee consistent cosmetic-grade stability.",
+        "We execute turnkey export shipping: 20ft & 40ft full container loads (FCL) dispatched directly from Port of Tema (Ghana) with phytosanitary and EUDR compliance dossiers, alongside rapid pallet and drum distribution from our European logistics hub in Halfweg, Netherlands.",
     },
   ];
 
@@ -57,7 +57,7 @@ export default function SheaButterPage() {
         <section className="relative w-full min-h-[500px] lg:min-h-[620px] flex items-center justify-center overflow-hidden bg-black pt-20">
           <Image
             src="/products/sheabutter.jpg"
-            alt="Handcrafted Shea Butter Production"
+            alt="Handcrafted Shea Butter Production & Export"
             fill
             className="object-cover opacity-60"
             priority
@@ -66,18 +66,16 @@ export default function SheaButterPage() {
 
           <div className="relative z-10 container mx-auto px-6 lg:px-12 py-16 text-center max-w-4xl text-white">
             <span className="text-brand-amber font-oswald uppercase text-xs lg:text-sm tracking-[0.25em] font-bold block mb-3">
-              Grade A Cosmetic Ingredient
+              Grade A Cosmetic Botanical · Turnkey Export
             </span>
 
             <h1 className="text-4xl sm:text-6xl lg:text-7xl font-oswald uppercase font-black tracking-tight leading-tight mb-6">
-              The Story of <br />
-              <span className="text-brand-amber">Hand-crafted Shea Butter</span>
+              Turnkey Processing &amp; <br />
+              <span className="text-brand-amber">Shea Butter Export</span>
             </h1>
 
             <p className="text-white/85 font-outfit text-base lg:text-lg max-w-2xl mx-auto mb-8">
-              100% natural, unrefined and steam-refined Shea butter hand-crafted
-              by rural women cooperatives in Northern Ghana with complete
-              traceability to wild savannah parklands.
+              We manage the entire supply chain for you: wild savannah nut collection, eco-friendly processing, lab certification, bulk packing, and container export directly to your destination port worldwide.
             </p>
 
             <div className="flex flex-wrap items-center justify-center gap-4">
@@ -85,13 +83,13 @@ export default function SheaButterPage() {
                 href="/contact"
                 className="px-8 py-3.5 rounded-xl bg-brand-amber text-zinc-950 font-oswald uppercase tracking-wider font-bold hover:bg-white transition-colors"
               >
-                Request Bulk Sample
+                Request Export Quote &amp; Samples
               </Link>
               <a
-                href="#product-specs"
+                href="#export-specs"
                 className="px-8 py-3.5 rounded-xl border border-white/40 text-white font-oswald uppercase tracking-wider hover:bg-white/10 transition-colors"
               >
-                View Specifications
+                Export Specs &amp; Logistics
               </a>
             </div>
           </div>
@@ -153,13 +151,13 @@ export default function SheaButterPage() {
         </section>
 
         {/* 3. Technical Specifications Table */}
-        <section id="product-specs" className="py-20 bg-[#F8F2EC]">
+        <section id="export-specs" className="py-20 bg-[#F8F2EC]">
           <div className="container mx-auto px-6 lg:px-12">
-            <div className="max-w-4xl mx-auto bg-white rounded-3xl p-8 lg:p-12 shadow-md border border-zinc-200">
+            <div className="max-w-4xl mx-auto bg-white rounded-3xl p-8 lg:p-12 shadow-md border border-zinc-200 mb-12">
               <div className="flex flex-col md:flex-row md:items-center justify-between pb-6 border-b border-zinc-200 mb-8 gap-4">
                 <div>
                   <span className="text-xs uppercase font-bold tracking-[0.25em] text-brand-red font-oswald block mb-1">
-                    Technical Data
+                    Technical Specifications
                   </span>
                   <h2 className="text-3xl lg:text-4xl font-oswald uppercase font-bold text-brand-brown">
                     Shea Butter Specification Sheet
@@ -245,8 +243,98 @@ export default function SheaButterPage() {
                   className="px-6 py-2.5 rounded-lg bg-brand-brown text-white font-oswald uppercase text-xs tracking-wider hover:bg-black transition-colors flex items-center gap-2"
                 >
                   <Download className="w-4 h-4" />
-                  <span>Download TDS & COA</span>
+                  <span>Request TDS &amp; COA</span>
                 </Link>
+              </div>
+            </div>
+
+            {/* Export Packaging & Logistics Specifications */}
+            <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6">
+              {/* Packaging */}
+              <div className="bg-white rounded-3xl p-8 border border-zinc-200 shadow-sm flex flex-col justify-between">
+                <div>
+                  <span className="text-xs font-mono font-bold text-brand-red uppercase tracking-wider block mb-2">
+                    Bulk Packaging Formats
+                  </span>
+                  <h3 className="text-2xl font-oswald uppercase font-bold text-brand-brown mb-4">
+                    Pails, Drums &amp; FCL
+                  </h3>
+                  <ul className="space-y-2.5 text-xs sm:text-sm font-outfit text-zinc-600">
+                    <li className="flex items-start gap-2">
+                      <span className="w-1.5 h-1.5 rounded-full bg-brand-red shrink-0 mt-2" />
+                      <span><strong>25kg Export Pails:</strong> Food-grade polyethylene liners with hermetic seals.</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="w-1.5 h-1.5 rounded-full bg-brand-red shrink-0 mt-2" />
+                      <span><strong>190kg Steel Drums:</strong> Internal food-grade lacquer coating.</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="w-1.5 h-1.5 rounded-full bg-brand-red shrink-0 mt-2" />
+                      <span><strong>20ft / 40ft Containers:</strong> 18.5 – 24.5 MT bulk or palletized.</span>
+                    </li>
+                  </ul>
+                </div>
+                <div className="pt-4 mt-6 border-t border-zinc-100 text-[11px] font-mono text-zinc-500 uppercase">
+                  Tamper-Evident Export Seals
+                </div>
+              </div>
+
+              {/* Incoterms */}
+              <div className="bg-white rounded-3xl p-8 border border-zinc-200 shadow-sm flex flex-col justify-between">
+                <div>
+                  <span className="text-xs font-mono font-bold text-brand-red uppercase tracking-wider block mb-2">
+                    Maritime Logistics
+                  </span>
+                  <h3 className="text-2xl font-oswald uppercase font-bold text-brand-brown mb-4">
+                    Incoterms &amp; Freight
+                  </h3>
+                  <ul className="space-y-2.5 text-xs sm:text-sm font-outfit text-zinc-600">
+                    <li className="flex items-start gap-2">
+                      <span className="w-1.5 h-1.5 rounded-full bg-brand-amber shrink-0 mt-2" />
+                      <span><strong>FOB Port of Tema:</strong> Direct maritime loading from Ghana with swift clearance.</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="w-1.5 h-1.5 rounded-full bg-brand-amber shrink-0 mt-2" />
+                      <span><strong>CIF Worldwide:</strong> Delivered to Rotterdam, Hamburg, Antwerp, Newark, Long Beach, etc.</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="w-1.5 h-1.5 rounded-full bg-brand-amber shrink-0 mt-2" />
+                      <span><strong>DDP Europe:</strong> Dispatched from Halfweg logistics warehouse.</span>
+                    </li>
+                  </ul>
+                </div>
+                <div className="pt-4 mt-6 border-t border-zinc-100 text-[11px] font-mono text-zinc-500 uppercase">
+                  Direct Maritime Transit
+                </div>
+              </div>
+
+              {/* Compliance */}
+              <div className="bg-white rounded-3xl p-8 border border-zinc-200 shadow-sm flex flex-col justify-between">
+                <div>
+                  <span className="text-xs font-mono font-bold text-brand-red uppercase tracking-wider block mb-2">
+                    Export Dossier
+                  </span>
+                  <h3 className="text-2xl font-oswald uppercase font-bold text-brand-brown mb-4">
+                    Customs Compliance
+                  </h3>
+                  <ul className="space-y-2.5 text-xs sm:text-sm font-outfit text-zinc-600">
+                    <li className="flex items-start gap-2">
+                      <span className="w-1.5 h-1.5 rounded-full bg-emerald-600 shrink-0 mt-2" />
+                      <span><strong>Phytosanitary Certificate:</strong> Issued by Ghana Ministry of Food &amp; Agriculture.</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="w-1.5 h-1.5 rounded-full bg-emerald-600 shrink-0 mt-2" />
+                      <span><strong>EUDR Shapefiles:</strong> Verified zero-deforestation parkland polygons.</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="w-1.5 h-1.5 rounded-full bg-emerald-600 shrink-0 mt-2" />
+                      <span><strong>ECOCERT Organic TC:</strong> Transaction certificates attached to Bill of Lading.</span>
+                    </li>
+                  </ul>
+                </div>
+                <div className="pt-4 mt-6 border-t border-zinc-100 text-[11px] font-mono text-zinc-500 uppercase">
+                  100% Import Ready
+                </div>
               </div>
             </div>
           </div>

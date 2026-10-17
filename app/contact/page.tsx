@@ -44,17 +44,16 @@ export default function ContactPage() {
           <div className="container mx-auto px-6 lg:px-12 text-center max-w-4xl">
             <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-brand-red/10 text-brand-red text-xs font-semibold tracking-widest uppercase mb-6">
               <Mail className="w-4 h-4 text-brand-red" />
-              Global Inquiries & Wholesale
+              Turnkey Shea Butter Export &amp; Wholesale Contracts
             </div>
 
             <h1 className="text-4xl sm:text-6xl lg:text-7xl font-oswald uppercase tracking-tight text-brand-brown leading-tight mb-6">
-              Get in Touch with Young and Dufe
+              We Do Everything For You. <br />
+              <span className="text-brand-red">And Export Directly To You.</span>
             </h1>
 
             <p className="text-zinc-700 font-outfit text-base lg:text-lg leading-relaxed max-w-2xl mx-auto">
-              Request cosmetic grade samples, Certificates of Analysis (COA),
-              technical dossiers, or explore building a dedicated cooperative supply
-              corridor for your brand.
+              Request cosmetic grade Shea butter samples, Certificates of Analysis (COA), or contract 20ft/40ft container loads dispatched directly from Port of Tema (Ghana) or rapid pails from our Netherlands distribution center.
             </p>
           </div>
         </section>
@@ -264,10 +263,10 @@ export default function ContactPage() {
                     </label>
                     <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
                       {[
-                        "Shea Butter",
-                        "Coconut Oil",
+                        "Shea Butter (Flagship)",
+                        "Virgin Coconut Oil",
                         "Baobab Oil",
-                        "Black Soap",
+                        "African Black Soap",
                       ].map((prod) => {
                         const isChecked = formData.products.includes(prod);
                         return (
@@ -277,7 +276,7 @@ export default function ContactPage() {
                             onClick={() => handleProductToggle(prod)}
                             className={`p-3 rounded-xl border text-xs font-oswald uppercase tracking-wider text-center transition-all cursor-pointer ${
                               isChecked
-                                ? "bg-brand-brown text-white border-brand-brown"
+                                ? "bg-brand-brown text-white border-brand-brown shadow-sm"
                                 : "bg-white text-zinc-700 border-zinc-300 hover:border-zinc-400"
                             }`}
                           >
@@ -288,33 +287,52 @@ export default function ContactPage() {
                     </div>
                   </div>
 
-                  {/* Volume Selection */}
-                  <div>
-                    <label className="block text-xs uppercase font-oswald tracking-wider text-zinc-700 mb-2 font-bold">
-                      Estimated Volume Needs
-                    </label>
-                    <select
-                      value={formData.volume}
-                      onChange={(e) =>
-                        setFormData({ ...formData, volume: e.target.value })
-                      }
-                      className="w-full px-4 py-3 rounded-xl border border-zinc-300 font-outfit text-sm focus:outline-brand-red bg-white"
-                    >
-                      <option value="Sample Kit Only">Sample Kit Only (&lt; 5kg)</option>
-                      <option value="25kg - 500kg">25kg - 500kg (European Warehouse Pails)</option>
-                      <option value="1 - 5 Metric Tons">1 - 5 Metric Tons (Standard Wholesale)</option>
-                      <option value="20ft / 40ft Container">20ft / 40ft Full Container Load (FCL)</option>
-                    </select>
+                  {/* Volume Selection & Incoterms */}
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                    <div>
+                      <label className="block text-xs uppercase font-oswald tracking-wider text-zinc-700 mb-2 font-bold">
+                        Estimated Volume Needs
+                      </label>
+                      <select
+                        value={formData.volume}
+                        onChange={(e) =>
+                          setFormData({ ...formData, volume: e.target.value })
+                        }
+                        className="w-full px-4 py-3 rounded-xl border border-zinc-300 font-outfit text-sm focus:outline-brand-red bg-white"
+                      >
+                        <option value="Sample Kit Only">Sample Kit Only (&lt; 5kg)</option>
+                        <option value="25kg Pails (500kg - 2 MT)">25kg Pails (500kg - 2 MT via EU Hub)</option>
+                        <option value="190kg Steel Drums (2 - 10 MT)">190kg Steel Drums (2 - 10 MT)</option>
+                        <option value="20ft Container (~19.5 MT FCL)">20ft Full Container Load (~19.5 MT FCL)</option>
+                        <option value="40ft Container (~24.5 MT FCL)">40ft Full Container Load (~24.5 MT FCL)</option>
+                      </select>
+                    </div>
+
+                    <div>
+                      <label className="block text-xs uppercase font-oswald tracking-wider text-zinc-700 mb-2 font-bold">
+                        Preferred Incoterm / Freight
+                      </label>
+                      <select
+                        defaultValue="FOB Tema (Ghana Container Port)"
+                        className="w-full px-4 py-3 rounded-xl border border-zinc-300 font-outfit text-sm focus:outline-brand-red bg-white"
+                      >
+                        <option value="FOB Tema (Ghana Container Port)">FOB Tema Port, Ghana (Direct Ocean)</option>
+                        <option value="CIF Europe (Rotterdam / Hamburg)">CIF Europe (Rotterdam, Hamburg, Antwerp)</option>
+                        <option value="CIF North America (New York / Long Beach)">CIF North America (New York, Long Beach)</option>
+                        <option value="DDP Europe (Halfweg Distribution)">DDP Europe (Direct from Netherlands Hub)</option>
+                        <option value="CIF Asia / Latin America / Other">CIF Other Destination Port</option>
+                      </select>
+                    </div>
                   </div>
 
                   {/* Message */}
                   <div>
                     <label className="block text-xs uppercase font-oswald tracking-wider text-zinc-700 mb-2 font-bold">
-                      Inquiry Details / Specific Formulation Criteria
+                      Inquiry Details &amp; Destination Port
                     </label>
                     <textarea
                       rows={4}
-                      placeholder="Please mention destination port, organic certification preferences, or custom packaging needs..."
+                      placeholder="Please specify destination port, unrefined vs steam-deodorized preferences, required lab parameters (FFA, peroxide value), or custom packing requirements..."
                       value={formData.message}
                       onChange={(e) =>
                         setFormData({ ...formData, message: e.target.value })
@@ -327,7 +345,7 @@ export default function ContactPage() {
                     type="submit"
                     className="w-full py-4 rounded-xl bg-brand-red text-white font-oswald uppercase tracking-wider text-base font-bold hover:bg-black transition-colors flex items-center justify-center gap-2 cursor-pointer shadow-md"
                   >
-                    <span>Submit Wholesale Inquiry</span>
+                    <span>Submit Shea Butter Export Inquiry</span>
                     <Send className="w-4 h-4" />
                   </button>
                 </form>
