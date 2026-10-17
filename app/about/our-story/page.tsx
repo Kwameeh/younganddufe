@@ -104,10 +104,10 @@ export default function OurStoryPage() {
                 </h2>
               </div>
               <Link
-                href="/about/team"
+                href="/about/partners"
                 className="inline-flex items-center gap-2 text-brand-red font-oswald uppercase text-sm font-bold tracking-wider hover:text-black transition-colors"
               >
-                <span>Meet Our Full Team</span>
+                <span>Explore Our Global Partners</span>
                 <ArrowUpRight className="w-4 h-4" />
               </Link>
             </div>

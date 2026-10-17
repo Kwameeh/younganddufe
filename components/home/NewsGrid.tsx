@@ -32,7 +32,7 @@ const newsItems: NewsItem[] = [
     date: "September 2026",
     category: "Biodiversity",
     excerpt:
-      "How our coconut agroforestry partnership with CREMA and WAPCA is securing vital habitats for the critically endangered Roloway monkey.",
+      "How our community agroforestry partnership with CREMA and WAPCA is securing vital savannah parklands and wildlife habitats.",
     imageSrc: "/news/2.jpg",
     href: "/impact/biodiversity",
   },

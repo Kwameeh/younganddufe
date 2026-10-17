@@ -259,14 +259,14 @@ export default function ContactPage() {
                   {/* Products Selection */}
                   <div>
                     <label className="block text-xs uppercase font-oswald tracking-wider text-zinc-700 mb-2 font-bold">
-                      Botanicals of Interest
+                      Shea Butter Grades of Interest
                     </label>
                     <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
                       {[
-                        "Shea Butter (Flagship)",
-                        "Virgin Coconut Oil",
-                        "Baobab Oil",
-                        "African Black Soap",
+                        "Raw Unrefined Shea",
+                        "Steam-Refined Shea",
+                        "Liquid Shea Oil",
+                        "Shea Black Soap",
                       ].map((prod) => {
                         const isChecked = formData.products.includes(prod);
                         return (

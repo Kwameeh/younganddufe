@@ -22,10 +22,10 @@ const stats: StatItem[] = [
   {
     target: 4,
     suffix: "",
-    label: "Regenerative Value Chains",
+    label: "Core Shea Butter Grades",
     bgColor: "bg-[#8B3A2B]",
     description:
-      "Hand-crafted Shea Butter, Virgin Coconut Oil, Baobab Oil, and African Black Soap protecting ancient agroforestry.",
+      "Grade-A Raw Unrefined, Steam-Deodorized, Liquid Shea Olein, and Shea-Enriched African Black Soap.",
   },
   {
     target: 10,

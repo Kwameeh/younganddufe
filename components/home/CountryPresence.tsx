@@ -18,7 +18,7 @@ const countries: CountryData[] = [
     name: "GHANA",
     localTitle: "Origin Hub & Headquarters",
     womenCount: "28,400+ Women",
-    keyProducts: "Shea Butter, Black Soap, Coconut Oil",
+    keyProducts: "Raw Unrefined Shea, Steam-Refined Shea, Shea Black Soap",
     ecosystem: "Mole Parkland & Ankasa-Tano Rainforest",
     svgPath:
       "M40 10 L60 12 L75 25 L80 50 L75 80 L65 95 L50 98 L35 92 L25 80 L20 60 L28 40 L32 20 Z",
@@ -28,7 +28,7 @@ const countries: CountryData[] = [
     name: "IVORY COAST",
     localTitle: "Coastal Agroforestry Hub",
     womenCount: "8,600+ Women",
-    keyProducts: "Virgin Coconut Oil, Organic Shea",
+    keyProducts: "Certified Organic Wild-Harvested Shea",
     ecosystem: "Primate Corridors & Littoral Mangroves",
     svgPath:
       "M30 15 L70 18 L85 35 L80 75 L70 95 L40 92 L20 85 L15 50 L22 30 Z",

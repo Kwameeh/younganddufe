@@ -47,6 +47,14 @@ export function Footer() {
               </li>
               <li>
                 <Link
+                  href="/about/partners"
+                  className="hover:text-brand-red transition-colors"
+                >
+                  Partners
+                </Link>
+              </li>
+              <li>
+                <Link
                   href="/impact/sustainability"
                   className="hover:text-brand-red transition-colors"
                 >
@@ -80,7 +88,7 @@ export function Footer() {
             </ul>
           </div>
 
-          {/* Products */}
+          {/* Products - Shea Butter Only */}
           <div className="flex flex-col gap-4">
             <h3 className="font-bold tracking-tight uppercase font-oswald text-brand-brown text-2xl">
               Our Products
@@ -91,31 +99,31 @@ export function Footer() {
                   href="/products/shea-butter"
                   className="hover:text-brand-red transition-colors"
                 >
-                  Shea Butter
+                  Handcrafted Unrefined Shea (Grade A)
                 </Link>
               </li>
               <li>
                 <Link
-                  href="/products/coconut-oil"
+                  href="/products/shea-butter#export-specs"
                   className="hover:text-brand-red transition-colors"
                 >
-                  Virgin Coconut Oil
+                  Steam-Refined &amp; Deodorized Shea
                 </Link>
               </li>
               <li>
                 <Link
-                  href="/products/baobab-oil"
+                  href="/products/shea-butter#export-specs"
                   className="hover:text-brand-red transition-colors"
                 >
-                  Cold-Pressed Baobab Oil
+                  Bulk Drums &amp; Containers (FCL)
                 </Link>
               </li>
               <li>
                 <Link
-                  href="/products/black-soap"
+                  href="/#countries-text"
                   className="hover:text-brand-red transition-colors"
                 >
-                  African Black Soap
+                  Origin Provenance &amp; Traceability
                 </Link>
               </li>
             </ul>

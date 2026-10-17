@@ -20,7 +20,7 @@ const items: AccordionItem[] = [
     summary:
       "Regenerative parkland conservation, zero deforestation, and circular energy.",
     details: [
-      "GPS boundary demarcation and protection of ancient shea and baobab agroforestry parklands.",
+      "GPS boundary demarcation and protection of ancient shea agroforestry parklands.",
       "100% conversion of shea processing waste into high-density clean bio-briquettes, replacing firewood.",
       "Active wildlife corridor conservation protecting endangered Roloway monkeys, hippos, and savannah elephants in partnership with CREMA and WAPCA.",
       "Zero clearcutting or soil disruption — harvesting is strictly wild collection and restorative cultivation.",

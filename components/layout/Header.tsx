@@ -85,17 +85,11 @@ export function Header({ variant = "transparent" }: HeaderProps) {
                           >
                             Partners
                           </Link>
-                          <Link
-                            href="/about/team"
-                            className="block px-5 py-2.5 hover:bg-[#F8F2EC] hover:text-brand-red transition-colors text-xs font-medium uppercase tracking-wider"
-                          >
-                            Team
-                          </Link>
                         </div>
                       )}
                     </li>
 
-                    {/* Products Dropdown */}
+                    {/* Products Dropdown - Shea Butter Only */}
                     <li
                       className="relative"
                       onMouseEnter={() => setProductsDropdown(true)}
@@ -111,25 +105,13 @@ export function Header({ variant = "transparent" }: HeaderProps) {
                             href="/products/shea-butter"
                             className="block px-5 py-2.5 hover:bg-[#F8F2EC] hover:text-brand-red transition-colors text-xs font-medium uppercase tracking-wider"
                           >
-                            Shea Butter
+                            Shea Butter (Flagship)
                           </Link>
                           <Link
-                            href="/products/coconut-oil"
+                            href="/products/shea-butter#export-specs"
                             className="block px-5 py-2.5 hover:bg-[#F8F2EC] hover:text-brand-red transition-colors text-xs font-medium uppercase tracking-wider"
                           >
-                            Virgin Coconut Oil
-                          </Link>
-                          <Link
-                            href="/products/baobab-oil"
-                            className="block px-5 py-2.5 hover:bg-[#F8F2EC] hover:text-brand-red transition-colors text-xs font-medium uppercase tracking-wider"
-                          >
-                            Baobab Oil
-                          </Link>
-                          <Link
-                            href="/products/black-soap"
-                            className="block px-5 py-2.5 hover:bg-[#F8F2EC] hover:text-brand-red transition-colors text-xs font-medium uppercase tracking-wider"
-                          >
-                            African Black Soap
+                            Export Specifications
                           </Link>
                         </div>
                       )}
@@ -225,17 +207,11 @@ export function Header({ variant = "transparent" }: HeaderProps) {
                           >
                             Partners
                           </Link>
-                          <Link
-                            href="/about/team"
-                            className="block px-5 py-2.5 hover:bg-[#F8F2EC] hover:text-brand-red transition-colors text-xs font-medium uppercase tracking-wider"
-                          >
-                            Team
-                          </Link>
                         </div>
                       )}
                     </li>
 
-                    {/* Products Dropdown */}
+                    {/* Products Dropdown - Shea Butter Only */}
                     <li
                       className="relative"
                       onMouseEnter={() => setProductsDropdown(true)}
@@ -251,25 +227,13 @@ export function Header({ variant = "transparent" }: HeaderProps) {
                             href="/products/shea-butter"
                             className="block px-5 py-2.5 hover:bg-[#F8F2EC] hover:text-brand-red transition-colors text-xs font-medium uppercase tracking-wider"
                           >
-                            Shea Butter
+                            Shea Butter (Flagship)
                           </Link>
                           <Link
-                            href="/products/coconut-oil"
+                            href="/products/shea-butter#export-specs"
                             className="block px-5 py-2.5 hover:bg-[#F8F2EC] hover:text-brand-red transition-colors text-xs font-medium uppercase tracking-wider"
                           >
-                            Virgin Coconut Oil
-                          </Link>
-                          <Link
-                            href="/products/baobab-oil"
-                            className="block px-5 py-2.5 hover:bg-[#F8F2EC] hover:text-brand-red transition-colors text-xs font-medium uppercase tracking-wider"
-                          >
-                            Baobab Oil
-                          </Link>
-                          <Link
-                            href="/products/black-soap"
-                            className="block px-5 py-2.5 hover:bg-[#F8F2EC] hover:text-brand-red transition-colors text-xs font-medium uppercase tracking-wider"
-                          >
-                            African Black Soap
+                            Export Specifications
                           </Link>
                         </div>
                       )}
@@ -386,17 +350,10 @@ export function Header({ variant = "transparent" }: HeaderProps) {
                   >
                     Partners
                   </Link>
-                  <Link
-                    href="/about/team"
-                    onClick={() => setMobileMenuOpen(false)}
-                    className="hover:text-brand-amber"
-                  >
-                    Team
-                  </Link>
                 </div>
               </li>
 
-              {/* Mobile Products */}
+              {/* Mobile Products - Shea Butter Only */}
               <li className="border-b border-white/10 pb-4">
                 <span className="text-white/60 text-xs block mb-2 font-sans tracking-widest uppercase">
                   Our Products
@@ -407,28 +364,14 @@ export function Header({ variant = "transparent" }: HeaderProps) {
                     onClick={() => setMobileMenuOpen(false)}
                     className="hover:text-brand-amber"
                   >
-                    Shea Butter
+                    Shea Butter (Flagship)
                   </Link>
                   <Link
-                    href="/products/coconut-oil"
+                    href="/products/shea-butter#export-specs"
                     onClick={() => setMobileMenuOpen(false)}
-                    className="hover:text-brand-amber"
+                    className="hover:text-brand-amber text-base opacity-80"
                   >
-                    Virgin Coconut Oil
-                  </Link>
-                  <Link
-                    href="/products/baobab-oil"
-                    onClick={() => setMobileMenuOpen(false)}
-                    className="hover:text-brand-amber"
-                  >
-                    Baobab Oil
-                  </Link>
-                  <Link
-                    href="/products/black-soap"
-                    onClick={() => setMobileMenuOpen(false)}
-                    className="hover:text-brand-amber"
-                  >
-                    African Black Soap
+                    Export Specifications
                   </Link>
                 </div>
               </li>
