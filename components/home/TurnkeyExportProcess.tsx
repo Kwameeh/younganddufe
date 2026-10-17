@@ -73,7 +73,7 @@ export function TurnkeyExportProcess() {
           {steps.map((step, idx) => (
             <div
               key={idx}
-              className="bg-[#F8F2EC] rounded-3xl p-8 border border-zinc-200/80 hover:border-brand-brown hover:shadow-lg transition-all duration-300 flex flex-col justify-between group"
+              className="bg-brand-accent rounded-3xl p-8 border border-zinc-200/80 hover:border-brand-brown hover:shadow-lg transition-all duration-300 flex flex-col justify-between group"
             >
               <div>
                 <div className="flex items-center justify-between mb-6">
@@ -105,7 +105,7 @@ export function TurnkeyExportProcess() {
         </div>
 
         {/* Turnkey Export Callout Bar */}
-        <div className="bg-[#8B3A2B] text-white rounded-3xl p-8 lg:p-12 shadow-xl flex flex-col lg:flex-row items-center justify-between gap-8">
+        <div className="bg-brand-brown text-white rounded-3xl p-8 lg:p-12 shadow-2xl border border-brand-amber/30 flex flex-col lg:flex-row items-center justify-between gap-8">
           <div className="max-w-2xl text-center lg:text-left">
             <span className="text-brand-amber font-oswald uppercase text-xs tracking-widest font-bold block mb-2">
               Ready For 2026 / 2027 Harvest Contracts

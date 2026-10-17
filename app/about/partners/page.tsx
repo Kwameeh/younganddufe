@@ -4,98 +4,98 @@ import React from "react";
 import Link from "next/link";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
-import { ArrowUpRight, ShieldCheck, HeartHandshake, Trees } from "lucide-react";
+import { ArrowUpRight, ShieldCheck, HeartHandshake, Trees, Sparkles, Building2, CheckCircle2 } from "lucide-react";
 
 interface PartnerInfo {
   name: string;
-  category: "Commercial" | "Conservation" | "Foundation";
+  category: "Commercial Archetype" | "Certification Framework" | "Ecosystem Stewardship";
   focus: string;
   cooperativeRegion: string;
-  tenure: string;
+  status: string;
   description: string;
 }
 
-const partnersList: PartnerInfo[] = [
+const dummyPartnersList: PartnerInfo[] = [
   {
-    name: "L'OCCITANE EN PROVENCE",
-    category: "Commercial",
+    name: "AURA BOTANICA FORMULATIONS",
+    category: "Commercial Archetype",
     focus: "Certified Organic Handcrafted Shea Butter",
     cooperativeRegion: "Wa & Northern Region, Ghana",
-    tenure: "15+ Years",
+    status: "Pilot Corridor",
     description:
-      "A long-standing ethical partnership supporting women's cooperative literacy, health clinics, and multi-year supply contracts.",
+      "Illustrative European skincare archetype testing small-batch Grade-A raw unrefined karité butter with full GC-MS fatty acid documentation.",
   },
   {
-    name: "THE BODY SHOP",
-    category: "Commercial",
-    focus: "Community Fair Trade Shea & Black Soap",
-    cooperativeRegion: "Tamale, Northern Ghana",
-    tenure: "18+ Years",
+    name: "VERDANT NORDIC SKINCARE",
+    category: "Commercial Archetype",
+    focus: "Virgin Coconut Oil & Liquid Shea Olein",
+    cooperativeRegion: "Western Region & Northern Belt",
+    status: "Prospective Client",
     description:
-      "Pioneered our initial Community Trade purchasing framework, providing fair upfront prices and building cooperative civic centers.",
+      "Illustrative clean beauty archetype integrating liquid shea fractions and ethical cold-pressed coconut oil into sensitive-skin formulations.",
   },
   {
-    name: "UNILEVER / PRESTIGE BEAUTY",
-    category: "Commercial",
-    focus: "Virgin Coconut Oil & Raw Shea Butter",
-    cooperativeRegion: "Western Region & Côte d'Ivoire",
-    tenure: "8+ Years",
+    name: "LUMINA ACTIVE DERMACEUTICALS",
+    category: "Commercial Archetype",
+    focus: "High-Triterpene Karité Extract & Phytoactives",
+    cooperativeRegion: "Upper East Savannah Belt",
+    status: "Research Pilot",
     description:
-      "Scaling certified ethical sourcing into high-performance global cosmetic formulas while supporting EUDR deforestation checks.",
+      "Illustrative clinical skincare archetype sourcing premium wild shea nuts with elevated unsaponifiables for anti-inflammatory cosmetic lines.",
   },
   {
-    name: "NOË NATURAL COSMETICS",
-    category: "Commercial",
-    focus: "Cold-Pressed Baobab & Organic Shea",
+    name: "TERRA DERMA PHYTOLABS",
+    category: "Commercial Archetype",
+    focus: "Shea-Enriched African Black Soap",
     cooperativeRegion: "Upper East Region, Ghana",
-    tenure: "6+ Years",
+    status: "Contract Pilot",
     description:
-      "Collaborating on high-potency antioxidant serum ingredients sourced directly in partnership with the Widows and Orphans Movement.",
+      "Illustrative artisanal brand archetype piloting direct procurement of traditional plant-ash soap bases hand-crafted by cooperative women.",
   },
   {
-    name: "SOFI TUCKER FOUNDATION",
-    category: "Foundation",
-    focus: "Women's Economic Self-Governance & Micro-Grants",
-    cooperativeRegion: "Trans-Savannah Belt",
-    tenure: "12+ Years",
+    name: "SOL BOTANICALS COLLECTIVE",
+    category: "Commercial Archetype",
+    focus: "Fair-Trade Cold-Pressed Botanicals",
+    cooperativeRegion: "Mole Ecological Corridor",
+    status: "Prospective Brand",
     description:
-      "Funding cooperative-owned mechanized shellers, solar water boreholes, and enterprise management courses for rural women.",
+      "Illustrative North American body-care brand developing ethical origin-traced body butter formulas directly from northern Ghanaian villages.",
   },
   {
-    name: "SUNDIAL BRANDS",
-    category: "Commercial",
-    focus: "Ethical African Botanicals & Shea Sourcing",
-    cooperativeRegion: "Ghana & Burkina Faso",
-    tenure: "14+ Years",
+    name: "SAVANNAH ATELIER AMSTERDAM",
+    category: "Commercial Archetype",
+    focus: "Steam-Deodorized Cosmetic Grade Shea",
+    cooperativeRegion: "Tamale Processing Center",
+    status: "European Hub Pilot",
     description:
-      "Supporting regenerative supply lines and establishing clean eco-facilities across our West African cooperative network.",
+      "Illustrative luxury fragrance & cosmetics archetype utilizing steam-deodorized, chemical-free shea dispatched through our European logistics pipeline.",
   },
   {
-    name: "WAPCA (West African Primate Action)",
-    category: "Conservation",
-    focus: "Canopy & Primate Corridor Conservation",
-    cooperativeRegion: "Ankasa-Tano Rainforest, Ghana",
-    tenure: "10+ Years",
+    name: "GEPA EXPORT COMPLIANCE",
+    category: "Certification Framework",
+    focus: "Phytosanitary & Export Quality Assurance",
+    cooperativeRegion: "National Export Corridors",
+    status: "Trade Standard",
     description:
-      "Integrating virgin coconut farming with active ranger patrols to safeguard the critically endangered Roloway monkey and White-naped Mangabey.",
+      "Structured alignment with Ghana Export Promotion Authority frameworks ensuring full phytosanitary clearance, COA certification, and container-load trace integrity.",
   },
   {
-    name: "CREMA (Community Resource Mgmt Areas)",
-    category: "Conservation",
-    focus: "Community-Led Wildlife Stewardship",
-    cooperativeRegion: "Mole & Wechiau Landscapes",
-    tenure: "12+ Years",
+    name: "ECOCERT REGENERATIVE STANDARD",
+    category: "Certification Framework",
+    focus: "Wild-Harvested Organic Certification",
+    cooperativeRegion: "Savannah Parkland Zones",
+    status: "Audit Blueprint",
     description:
-      "Empowering local communities to legally demarcate wildlife conservation zones where harvesting of fallen wild shea nuts is strictly regenerative.",
+      "Auditing architecture aligning women's harvesting zones with strict pesticide-free, wild-collection criteria and regenerative soil stewardship protocols.",
   },
   {
-    name: "GLOBAL SHEA ALLIANCE (GSA)",
-    category: "Conservation",
-    focus: "Industry Sustainability Guidelines & Standards",
-    cooperativeRegion: "West Africa Regional",
-    tenure: "Founding Member",
+    name: "SAVANNAH BIODIVERSITY ACCORD",
+    category: "Ecosystem Stewardship",
+    focus: "Parkland Protection & Anti-Deforestation",
+    cooperativeRegion: "Mole & Wechiau Reserves",
+    status: "Conservation Model",
     description:
-      "Setting continental standards for women's safety, seedling nurseries, parkland restoration, and clean cooking briquettes.",
+      "Community-led resource stewardship model protecting ancient shea parklands from charcoal logging while creating economic incentives for wildlife conservation.",
   },
 ];
 
@@ -106,22 +106,29 @@ export default function PartnersPage() {
 
       <main className="flex-1">
         {/* Hero Header */}
-        <section className="pt-28 pb-20 lg:pt-36 lg:pb-28 bg-[#F8F2EC] border-b border-zinc-200">
+        <section className="pt-28 pb-20 lg:pt-36 lg:pb-28 bg-[#FAF6F0] border-b border-zinc-200">
           <div className="container mx-auto px-6 lg:px-12 text-center max-w-4xl">
-            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-brand-brown/10 text-brand-brown text-xs font-semibold tracking-widest uppercase mb-6">
-              <HeartHandshake className="w-4 h-4 text-brand-brown" />
-              Strategic & Ecological Alliances
+            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-brand-amber/15 text-brand-brown text-xs font-semibold tracking-widest uppercase mb-6 border border-brand-amber/30">
+              <Sparkles className="w-3.5 h-3.5 text-brand-amber" />
+              <span>Commercial Network & Sourcing Corridors</span>
             </div>
 
             <h1 className="text-4xl sm:text-6xl lg:text-7xl font-oswald uppercase tracking-tight text-brand-brown leading-tight mb-6">
-              Our Partners In Regenerative Impact
+              Partnership & Brand Supply Corridors
             </h1>
 
-            <p className="text-zinc-700 font-outfit text-base lg:text-lg leading-relaxed max-w-2xl mx-auto">
-              We align with global cosmetic innovators, biodiversity watchdogs,
-              and community foundations to build dedicated, verifiable supply chains
-              that uplift African women while defending ancient ecosystems.
+            <p className="text-zinc-700 font-outfit text-base lg:text-lg leading-relaxed max-w-2xl mx-auto mb-6">
+              We design dedicated, fully traceable ethical supply corridors for cosmetic formulators,
+              clean beauty innovators, and commercial distributors seeking unadulterated West African botanicals.
             </p>
+
+            {/* Illustrative Notice */}
+            <div className="inline-block bg-white/80 backdrop-blur-sm border border-zinc-200/80 rounded-2xl px-6 py-3 text-xs font-mono text-zinc-600 max-w-xl mx-auto">
+              <span className="text-brand-red font-bold uppercase tracking-wider block mb-0.5">
+                ● Prospective Client Archetypes & Pilot Frameworks
+              </span>
+              The profiles below illustrate our target commercial partner typologies and quality control frameworks as we open founding brand agreements.
+            </div>
           </div>
         </section>
 
@@ -129,22 +136,22 @@ export default function PartnersPage() {
         <section className="py-24 bg-white">
           <div className="container mx-auto px-6 lg:px-12">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {partnersList.map((partner, idx) => (
+              {dummyPartnersList.map((partner, idx) => (
                 <div
                   key={idx}
-                  className="bg-[#F8F2EC]/50 rounded-3xl p-8 border border-zinc-200/80 hover:border-brand-brown hover:shadow-lg transition-all duration-300 flex flex-col justify-between"
+                  className="bg-[#FAF6F0]/60 rounded-3xl p-8 border border-zinc-200/80 hover:border-brand-amber hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between group"
                 >
                   <div>
                     <div className="flex items-center justify-between mb-4">
-                      <span className="text-[11px] font-mono uppercase tracking-wider px-2.5 py-1 rounded-md bg-white border border-zinc-200 font-bold text-zinc-700">
+                      <span className="text-[10px] font-mono uppercase tracking-wider px-2.5 py-1 rounded-md bg-white border border-zinc-200 font-bold text-zinc-700">
                         {partner.category}
                       </span>
-                      <span className="text-xs font-oswald uppercase text-brand-red font-bold">
-                        {partner.tenure}
+                      <span className="text-xs font-mono uppercase text-brand-amber font-bold">
+                        {partner.status}
                       </span>
                     </div>
 
-                    <h3 className="text-2xl font-oswald uppercase font-bold text-brand-brown tracking-tight mb-2">
+                    <h3 className="text-2xl font-oswald uppercase font-bold text-brand-brown tracking-tight mb-2 group-hover:text-brand-amber transition-colors">
                       {partner.name}
                     </h3>
 
@@ -157,8 +164,8 @@ export default function PartnersPage() {
                     </p>
                   </div>
 
-                  <div className="pt-4 border-t border-zinc-200 text-xs font-outfit text-zinc-500 flex items-center justify-between">
-                    <span>Region: {partner.cooperativeRegion}</span>
+                  <div className="pt-4 border-t border-zinc-200/80 text-xs font-outfit text-zinc-500 flex items-center justify-between">
+                    <span>Scope: {partner.cooperativeRegion}</span>
                     <ShieldCheck className="w-4 h-4 text-emerald-600 shrink-0" />
                   </div>
                 </div>
@@ -167,25 +174,82 @@ export default function PartnersPage() {
           </div>
         </section>
 
+        {/* How Sourcing Partnership Works */}
+        <section className="py-20 bg-[#FAF6F0] border-t border-zinc-200">
+          <div className="container mx-auto px-6 lg:px-12">
+            <div className="text-center max-w-2xl mx-auto mb-16">
+              <span className="text-xs font-mono uppercase font-bold tracking-widest text-brand-red block mb-2">
+                Turnkey Corridor Model
+              </span>
+              <h2 className="text-3xl lg:text-5xl font-oswald uppercase font-bold text-brand-brown tracking-tight mb-4">
+                How We Build Your Dedicated Supply Line
+              </h2>
+              <p className="text-zinc-600 font-outfit text-sm lg:text-base">
+                From initial lab sample testing to 20ft container logistics, we manage the complete cooperative procurement journey.
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+              <div className="bg-white p-8 rounded-3xl border border-zinc-200/80 shadow-sm">
+                <span className="text-2xl font-oswald font-black text-brand-amber block mb-4">01</span>
+                <h4 className="font-oswald uppercase font-bold text-xl text-brand-brown mb-2">
+                  Sample & Spec Formulation
+                </h4>
+                <p className="text-zinc-600 text-sm font-outfit leading-relaxed">
+                  Request Grade-A raw, deodorized, or liquid shea samples dispatched from our European hub with Certificate of Analysis (COA) and microbiological test reports.
+                </p>
+              </div>
+
+              <div className="bg-white p-8 rounded-3xl border border-zinc-200/80 shadow-sm">
+                <span className="text-2xl font-oswald font-black text-brand-amber block mb-4">02</span>
+                <h4 className="font-oswald uppercase font-bold text-xl text-brand-brown mb-2">
+                  Cooperative Allocation
+                </h4>
+                <p className="text-zinc-600 text-sm font-outfit leading-relaxed">
+                  Lock in seasonal harvest contracts directly connected to democratic women&apos;s cooperatives in northern Ghana, guaranteeing fair living prices.
+                </p>
+              </div>
+
+              <div className="bg-white p-8 rounded-3xl border border-zinc-200/80 shadow-sm">
+                <span className="text-2xl font-oswald font-black text-brand-amber block mb-4">03</span>
+                <h4 className="font-oswald uppercase font-bold text-xl text-brand-brown mb-2">
+                  Freight & Documentation
+                </h4>
+                <p className="text-zinc-600 text-sm font-outfit leading-relaxed">
+                  Full export container clearance from Port of Tema or rapid pallet fulfillment across Europe and North America with complete phytosanitary compliance.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* Callout Section */}
-        <section className="py-20 bg-brand-brown text-white">
-          <div className="container mx-auto px-6 lg:px-12 text-center max-w-3xl">
+        <section className="py-24 bg-brand-brown text-white relative overflow-hidden">
+          <div className="absolute inset-0 bg-radial-gradient from-brand-amber/10 to-transparent pointer-events-none" />
+          <div className="container mx-auto px-6 lg:px-12 text-center max-w-3xl relative z-10">
             <Trees className="w-12 h-12 text-brand-amber mx-auto mb-6" />
-            <h2 className="text-3xl lg:text-5xl font-oswald uppercase tracking-tight mb-4">
-              Build a Dedicated Supply Chain for Your Brand
+            <h2 className="text-3xl lg:text-5xl font-oswald uppercase tracking-tight mb-4 text-white">
+              Become A Founding Brand Partner
             </h2>
             <p className="text-white/80 font-outfit text-base leading-relaxed mb-8">
-              Whether you are an established global cosmetic brand or a fast-growing
-              clean beauty formulator, Young and Dufe can establish a fully traceable,
-              custom-audited cooperative sourcing corridor tailored to your technical specs.
+              Whether you are an established international cosmetic brand or an emerging clean formulation studio,
+              Young and Dufe can establish a verified, traceable cooperative sourcing corridor tailored precisely to your chemical and physical specifications.
             </p>
-            <Link
-              href="/contact"
-              className="inline-flex items-center gap-2 px-8 py-4 rounded-xl bg-brand-amber text-black font-oswald uppercase tracking-wider font-bold text-base hover:bg-white transition-colors"
-            >
-              <span>Initiate Partner Inquiry</span>
-              <ArrowUpRight className="w-5 h-5" />
-            </Link>
+            <div className="flex flex-wrap items-center justify-center gap-4">
+              <Link
+                href="/contact"
+                className="inline-flex items-center gap-2 px-8 py-4 rounded-xl bg-brand-amber text-zinc-950 font-oswald uppercase tracking-wider font-bold text-base hover:bg-white transition-colors shadow-lg"
+              >
+                <span>Initiate Partner Inquiry</span>
+                <ArrowUpRight className="w-5 h-5" />
+              </Link>
+              <Link
+                href="/products/shea-butter"
+                className="inline-flex items-center gap-2 px-8 py-4 rounded-xl border border-white/30 text-white font-oswald uppercase tracking-wider font-bold text-base hover:bg-white/10 transition-colors"
+              >
+                <span>Explore Technical Specs</span>
+              </Link>
+            </div>
           </div>
         </section>
       </main>

@@ -60,7 +60,7 @@ export default function BiodiversityPage() {
         </section>
 
         {/* 3. Species & Habitats Protected Grid */}
-        <section className="py-24 bg-[#F8F2EC]">
+        <section className="py-24 bg-brand-accent">
           <div className="container mx-auto px-6 lg:px-12">
             <div className="text-center max-w-3xl mx-auto mb-16">
               <span className="text-xs uppercase font-bold tracking-[0.25em] text-brand-red font-oswald block mb-2">

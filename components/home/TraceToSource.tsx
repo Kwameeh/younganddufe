@@ -84,7 +84,7 @@ export function TraceToSource() {
 
           {/* Right Column: Video Container */}
           <div className="lg:col-span-6 relative">
-            <div className="relative rounded-3xl overflow-hidden shadow-2xl bg-black aspect-video lg:aspect-[4/3] group border-4 border-[#F8F2EC]">
+            <div className="relative rounded-3xl overflow-hidden shadow-2xl bg-black aspect-video lg:aspect-[4/3] group border-4 border-brand-accent">
               <video
                 ref={videoRef}
                 autoPlay
@@ -158,7 +158,7 @@ export function TraceToSource() {
             </form>
 
             {searchedBatch && (
-              <div className="p-4 rounded-2xl bg-[#F8F2EC] border border-[#D6B78F]/40 space-y-2 text-xs font-outfit">
+              <div className="p-4 rounded-2xl bg-brand-accent border border-brand-amber/30 space-y-2 text-xs font-outfit">
                 <div className="flex justify-between items-center text-emerald-700 font-bold">
                   <span>Status: Authenticated Authentic Batch</span>
                   <CheckCircle2 className="w-4 h-4" />

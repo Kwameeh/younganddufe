@@ -99,7 +99,7 @@ export default function SheaButterPage() {
         <section className="py-12 bg-white border-b border-zinc-200">
           <div className="container mx-auto px-6 lg:px-12">
             <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
-              <div className="p-6 rounded-2xl bg-[#F8F2EC] border border-zinc-200/60">
+              <div className="p-6 rounded-2xl bg-brand-accent border border-zinc-200/60">
                 <div className="text-2xl lg:text-3xl font-oswald font-bold text-brand-red mb-1">
                   16 Million
                 </div>
@@ -111,7 +111,7 @@ export default function SheaButterPage() {
                 </p>
               </div>
 
-              <div className="p-6 rounded-2xl bg-[#F8F2EC] border border-zinc-200/60">
+              <div className="p-6 rounded-2xl bg-brand-accent border border-zinc-200/60">
                 <div className="text-2xl lg:text-3xl font-oswald font-bold text-brand-brown mb-1">
                   Cooperative
                 </div>
@@ -123,8 +123,8 @@ export default function SheaButterPage() {
                 </p>
               </div>
 
-              <div className="p-6 rounded-2xl bg-[#F8F2EC] border border-zinc-200/60">
-                <div className="text-2xl lg:text-3xl font-oswald font-bold text-[#8BC832] mb-1">
+              <div className="p-6 rounded-2xl bg-brand-accent border border-zinc-200/60">
+                <div className="text-2xl lg:text-3xl font-oswald font-bold text-brand-green mb-1">
                   100% Wild
                 </div>
                 <div className="text-xs font-oswald uppercase tracking-wider text-zinc-500 mb-2">
@@ -135,7 +135,7 @@ export default function SheaButterPage() {
                 </p>
               </div>
 
-              <div className="p-6 rounded-2xl bg-[#F8F2EC] border border-zinc-200/60">
+              <div className="p-6 rounded-2xl bg-brand-accent border border-zinc-200/60">
                 <div className="text-2xl lg:text-3xl font-oswald font-bold text-[#F1BA40] mb-1">
                   -89% Firewood
                 </div>
@@ -151,7 +151,7 @@ export default function SheaButterPage() {
         </section>
 
         {/* 3. Technical Specifications Table */}
-        <section id="export-specs" className="py-20 bg-[#F8F2EC]">
+        <section id="export-specs" className="py-20 bg-brand-accent">
           <div className="container mx-auto px-6 lg:px-12">
             <div className="max-w-4xl mx-auto bg-white rounded-3xl p-8 lg:p-12 shadow-md border border-zinc-200 mb-12">
               <div className="flex flex-col md:flex-row md:items-center justify-between pb-6 border-b border-zinc-200 mb-8 gap-4">
@@ -365,7 +365,7 @@ export default function SheaButterPage() {
                   className={`px-5 py-3 rounded-xl font-oswald uppercase text-sm tracking-wider transition-all cursor-pointer ${
                     activeTab === idx
                       ? "bg-brand-brown text-white shadow-md"
-                      : "bg-[#F8F2EC] text-zinc-700 hover:bg-zinc-200"
+                      : "bg-brand-accent text-zinc-700 hover:bg-zinc-200"
                   }`}
                 >
                   <span className="opacity-60 mr-2 font-mono">{stage.step}</span>
@@ -375,7 +375,7 @@ export default function SheaButterPage() {
             </div>
 
             {/* Active Stage Card */}
-            <div className="max-w-4xl mx-auto bg-[#F8F2EC] rounded-3xl overflow-hidden shadow-lg border border-zinc-200 grid grid-cols-1 md:grid-cols-2">
+            <div className="max-w-4xl mx-auto bg-brand-accent rounded-3xl overflow-hidden shadow-lg border border-zinc-200 grid grid-cols-1 md:grid-cols-2">
               <div className="relative aspect-video md:aspect-auto min-h-[300px]">
                 <Image
                   src={sourcingStages[activeTab].image}

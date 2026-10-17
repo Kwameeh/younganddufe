@@ -40,7 +40,7 @@ export default function ContactPage() {
 
       <main className="flex-1">
         {/* Header Banner */}
-        <section className="pt-28 pb-20 lg:pt-36 lg:pb-28 bg-[#F8F2EC] border-b border-zinc-200">
+        <section className="pt-28 pb-20 lg:pt-36 lg:pb-28 bg-brand-accent border-b border-zinc-200">
           <div className="container mx-auto px-6 lg:px-12 text-center max-w-4xl">
             <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-brand-red/10 text-brand-red text-xs font-semibold tracking-widest uppercase mb-6">
               <Mail className="w-4 h-4 text-brand-red" />
@@ -63,7 +63,7 @@ export default function ContactPage() {
           <div className="container mx-auto px-6 lg:px-12">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {/* Office 1: Tamale */}
-              <div className="bg-[#F8F2EC] rounded-3xl p-8 border border-zinc-200 flex flex-col justify-between">
+              <div className="bg-brand-accent rounded-3xl p-8 border border-zinc-200 flex flex-col justify-between">
                 <div>
                   <div className="w-12 h-12 rounded-2xl bg-brand-brown/10 flex items-center justify-center text-brand-brown mb-6">
                     <Building2 className="w-6 h-6" />
@@ -94,7 +94,7 @@ export default function ContactPage() {
               </div>
 
               {/* Office 2: Accra */}
-              <div className="bg-[#F8F2EC] rounded-3xl p-8 border border-zinc-200 flex flex-col justify-between">
+              <div className="bg-brand-accent rounded-3xl p-8 border border-zinc-200 flex flex-col justify-between">
                 <div>
                   <div className="w-12 h-12 rounded-2xl bg-brand-red/10 flex items-center justify-center text-brand-red mb-6">
                     <Building2 className="w-6 h-6" />
@@ -125,7 +125,7 @@ export default function ContactPage() {
               </div>
 
               {/* Office 3: Netherlands */}
-              <div className="bg-[#F8F2EC] rounded-3xl p-8 border border-zinc-200 flex flex-col justify-between">
+              <div className="bg-brand-accent rounded-3xl p-8 border border-zinc-200 flex flex-col justify-between">
                 <div>
                   <div className="w-12 h-12 rounded-2xl bg-brand-amber/15 flex items-center justify-center text-brand-brown mb-6">
                     <Building2 className="w-6 h-6" />
@@ -159,7 +159,7 @@ export default function ContactPage() {
         </section>
 
         {/* Wholesale Inquiry Form */}
-        <section className="py-24 bg-[#F8F2EC]">
+        <section className="py-24 bg-brand-accent">
           <div className="container mx-auto px-6 lg:px-12 max-w-3xl">
             <div className="bg-white rounded-3xl p-8 lg:p-12 shadow-lg border border-zinc-200">
               <div className="text-center mb-8">

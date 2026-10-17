@@ -15,7 +15,7 @@ const stats: StatItem[] = [
     target: 48000,
     suffix: "+",
     label: "Rural Women",
-    bgColor: "bg-[#E4A836]",
+    bgColor: "bg-[#C98A2C]",
     description:
       "Directly engaged through autonomous women-led cooperatives with democratic self-governance across West Africa.",
   },
@@ -23,7 +23,7 @@ const stats: StatItem[] = [
     target: 4,
     suffix: "",
     label: "Core Shea Butter Grades",
-    bgColor: "bg-[#8B3A2B]",
+    bgColor: "bg-[#A84528]",
     description:
       "Grade-A Raw Unrefined, Steam-Deodorized, Liquid Shea Olein, and Shea-Enriched African Black Soap.",
   },
@@ -31,7 +31,7 @@ const stats: StatItem[] = [
     target: 10,
     suffix: "%",
     label: "Profit Reinvestment",
-    bgColor: "bg-[#94C84E]",
+    bgColor: "bg-[#264E36]",
     description:
       "Dedicated directly to community conservation funds, solar clean water boreholes, and kindergarten schools.",
   },
@@ -39,7 +39,7 @@ const stats: StatItem[] = [
     target: 90,
     suffix: "%",
     label: "Cut In Firewood Use",
-    bgColor: "bg-[#B79C79]",
+    bgColor: "bg-[#8C5E32]",
     description:
       "Replacing traditional timber fuel with clean energy bio-briquettes compressed from circular shea-waste.",
   },
@@ -92,7 +92,7 @@ export function StatCardsGrid() {
     <section
       id="stats"
       ref={sectionRef}
-      className="py-16 lg:py-24 bg-[#F8F2EC] overflow-hidden"
+      className="py-16 lg:py-24 bg-brand-accent overflow-hidden"
     >
       <div className="container mx-auto px-6 lg:px-12">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-stretch">

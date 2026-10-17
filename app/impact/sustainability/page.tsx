@@ -20,7 +20,7 @@ export default function SustainabilityPage() {
 
       <main className="flex-1">
         {/* 1. Core Philosophy Hero */}
-        <section className="pt-28 pb-20 lg:pt-36 lg:pb-28 bg-[#F8F2EC] border-b border-zinc-200">
+        <section className="pt-28 pb-20 lg:pt-36 lg:pb-28 bg-brand-accent border-b border-zinc-200">
           <div className="container mx-auto px-6 lg:px-12 text-center max-w-4xl">
             <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-brand-red/10 text-brand-red text-xs font-semibold tracking-widest uppercase mb-6">
               <Leaf className="w-4 h-4 text-brand-red" />
@@ -45,7 +45,7 @@ export default function SustainabilityPage() {
           <div className="container mx-auto px-6 lg:px-12">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               {/* Pillar 1 */}
-              <div className="p-8 lg:p-10 rounded-3xl bg-[#F8F2EC] border border-zinc-200 flex flex-col justify-between">
+              <div className="p-8 lg:p-10 rounded-3xl bg-brand-accent border border-zinc-200 flex flex-col justify-between">
                 <div>
                   <div className="flex items-center justify-between mb-6">
                     <span className="text-xs font-mono font-bold text-brand-red uppercase tracking-widest">
@@ -70,10 +70,10 @@ export default function SustainabilityPage() {
               </div>
 
               {/* Pillar 2 */}
-              <div className="p-8 lg:p-10 rounded-3xl bg-[#F8F2EC] border border-zinc-200 flex flex-col justify-between">
+              <div className="p-8 lg:p-10 rounded-3xl bg-brand-accent border border-zinc-200 flex flex-col justify-between">
                 <div>
                   <div className="flex items-center justify-between mb-6">
-                    <span className="text-xs font-mono font-bold text-[#8BC832] uppercase tracking-widest">
+                    <span className="text-xs font-mono font-bold text-brand-green uppercase tracking-widest">
                       Pillar 02
                     </span>
                     <ShieldCheck className="w-6 h-6 text-[#2D5016]" />
@@ -94,7 +94,7 @@ export default function SustainabilityPage() {
               </div>
 
               {/* Pillar 3 */}
-              <div className="p-8 lg:p-10 rounded-3xl bg-[#F8F2EC] border border-zinc-200 flex flex-col justify-between">
+              <div className="p-8 lg:p-10 rounded-3xl bg-brand-accent border border-zinc-200 flex flex-col justify-between">
                 <div>
                   <div className="flex items-center justify-between mb-6">
                     <span className="text-xs font-mono font-bold text-brand-amber uppercase tracking-widest">
@@ -119,7 +119,7 @@ export default function SustainabilityPage() {
               </div>
 
               {/* Pillar 4 */}
-              <div className="p-8 lg:p-10 rounded-3xl bg-[#F8F2EC] border border-zinc-200 flex flex-col justify-between">
+              <div className="p-8 lg:p-10 rounded-3xl bg-brand-accent border border-zinc-200 flex flex-col justify-between">
                 <div>
                   <div className="flex items-center justify-between mb-6">
                     <span className="text-xs font-mono font-bold text-brand-brown uppercase tracking-widest">
@@ -147,7 +147,7 @@ export default function SustainabilityPage() {
         </section>
 
         {/* 3. Independent Impact Audits & Reports */}
-        <section className="py-20 bg-[#F8F2EC] border-t border-zinc-200">
+        <section className="py-20 bg-brand-accent border-t border-zinc-200">
           <div className="container mx-auto px-6 lg:px-12 text-center max-w-4xl">
             <span className="text-xs uppercase font-bold tracking-[0.25em] text-brand-red font-oswald block mb-2">
               Transparency In Action

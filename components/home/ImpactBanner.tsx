@@ -41,7 +41,7 @@ export function ImpactBanner() {
           </span>
           <h2 className="text-5xl sm:text-7xl lg:text-8xl font-oswald uppercase font-black text-white tracking-tighter leading-[0.95] mb-8">
             Shea Gets <br />
-            <span className="text-[#8BC832]">Greener</span>
+            <span className="text-emerald-400">Greener</span>
           </h2>
 
           <div className="flex flex-wrap items-center gap-5">
@@ -70,7 +70,7 @@ export function ImpactBanner() {
             </div>
           </div>
           <div>
-            <div className="text-2xl lg:text-3xl font-oswald font-bold text-[#8BC832]">
+            <div className="text-2xl lg:text-3xl font-oswald font-bold text-emerald-400">
               100%
             </div>
             <div className="text-xs text-white/70 font-outfit">
@@ -86,7 +86,7 @@ export function ImpactBanner() {
             </div>
           </div>
           <div>
-            <div className="text-2xl lg:text-3xl font-oswald font-bold text-[#8BC832]">
+            <div className="text-2xl lg:text-3xl font-oswald font-bold text-emerald-400">
               Net Zero
             </div>
             <div className="text-xs text-white/70 font-outfit">

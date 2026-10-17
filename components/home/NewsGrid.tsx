@@ -50,7 +50,7 @@ const newsItems: NewsItem[] = [
 
 export function NewsGrid() {
   return (
-    <section id="news" className="py-24 bg-[#F8F2EC]">
+    <section id="news" className="py-24 bg-brand-accent">
       <div className="container mx-auto px-6 lg:px-12">
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-14 gap-6">
           <div>

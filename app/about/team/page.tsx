@@ -107,7 +107,7 @@ export default function TeamPage() {
 
       <main className="flex-1">
         {/* Hero Section */}
-        <section className="pt-28 pb-20 lg:pt-36 lg:pb-28 bg-[#F8F2EC] border-b border-zinc-200">
+        <section className="pt-28 pb-20 lg:pt-36 lg:pb-28 bg-brand-accent border-b border-zinc-200">
           <div className="container mx-auto px-6 lg:px-12 text-center max-w-4xl">
             <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-brand-red/10 text-brand-red text-xs font-semibold tracking-widest uppercase mb-6">
               <Users2 className="w-4 h-4 text-brand-red" />
@@ -133,7 +133,7 @@ export default function TeamPage() {
               {teamList.map((member, idx) => (
                 <div
                   key={idx}
-                  className="bg-[#F8F2EC]/60 rounded-3xl p-6 border border-zinc-200 hover:border-brand-brown hover:shadow-lg transition-all duration-300 flex flex-col justify-between"
+                  className="bg-brand-accent/60 rounded-3xl p-6 border border-zinc-200 hover:border-brand-brown hover:shadow-lg transition-all duration-300 flex flex-col justify-between"
                 >
                   <div>
                     <div className="flex items-center justify-between mb-4">

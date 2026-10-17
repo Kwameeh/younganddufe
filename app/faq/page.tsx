@@ -72,7 +72,7 @@ export function FAQPage() {
 
       <main className="flex-1">
         {/* Header Banner */}
-        <section className="pt-28 pb-20 lg:pt-36 lg:pb-28 bg-[#F8F2EC] border-b border-zinc-200">
+        <section className="pt-28 pb-20 lg:pt-36 lg:pb-28 bg-brand-accent border-b border-zinc-200">
           <div className="container mx-auto px-6 lg:px-12 text-center max-w-4xl">
             <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-brand-brown/10 text-brand-brown text-xs font-semibold tracking-widest uppercase mb-6">
               <HelpCircle className="w-4 h-4 text-brand-brown" />
@@ -105,7 +105,7 @@ export function FAQPage() {
                   className={`px-5 py-2.5 rounded-full text-xs font-oswald uppercase tracking-wider transition-all cursor-pointer ${
                     selectedCategory === cat
                       ? "bg-brand-brown text-white shadow-xs"
-                      : "bg-[#F8F2EC] text-zinc-700 hover:bg-zinc-200"
+                      : "bg-brand-accent text-zinc-700 hover:bg-zinc-200"
                   }`}
                 >
                   {cat}
@@ -122,7 +122,7 @@ export function FAQPage() {
                     key={idx}
                     className={`border rounded-2xl overflow-hidden transition-all duration-300 ${
                       isOpen
-                        ? "border-brand-brown bg-[#F8F2EC]/50 shadow-sm"
+                        ? "border-brand-brown bg-brand-accent/50 shadow-sm"
                         : "border-zinc-200 bg-white hover:border-zinc-300"
                     }`}
                   >
@@ -156,7 +156,7 @@ export function FAQPage() {
             </div>
 
             {/* Still have questions CTA */}
-            <div className="mt-16 p-8 rounded-3xl bg-[#F8F2EC] border border-zinc-200 text-center">
+            <div className="mt-16 p-8 rounded-3xl bg-brand-accent border border-zinc-200 text-center">
               <h3 className="text-2xl font-oswald uppercase font-bold text-brand-brown mb-2">
                 Have a Custom Formulation or Sourcing Question?
               </h3>

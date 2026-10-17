@@ -7,7 +7,7 @@ import { ArrowUpRight } from "lucide-react";
 
 export function ProductShowcase() {
   return (
-    <section id="products" className="py-20 bg-[#F8F2EC]">
+    <section id="products" className="py-20 bg-brand-accent">
       <div className="container mx-auto px-6 lg:px-12">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-14">
@@ -73,7 +73,7 @@ export function ProductShowcase() {
           {/* Card 2: Shea Butter Olein / Liquid Shea Oil (Amber / Yellow) */}
           <Link
             href="/products/shea-butter#export-specs"
-            className="group bg-[#E4A836] text-zinc-950 rounded-3xl p-7 min-h-[580px] lg:min-h-[620px] flex flex-col justify-between transition-all duration-300 hover:scale-[0.98] shadow-lg relative overflow-hidden"
+            className="group bg-brand-amber text-zinc-950 rounded-3xl p-7 min-h-[580px] lg:min-h-[620px] flex flex-col justify-between transition-all duration-300 hover:scale-[0.98] shadow-lg relative overflow-hidden"
           >
             <div>
               <div className="flex items-center justify-between mb-4">
@@ -172,7 +172,7 @@ export function ProductShowcase() {
           {/* Card 4: Shea-Enriched African Black Soap (Terracotta Red) */}
           <Link
             href="/products/shea-butter#export-specs"
-            className="group bg-[#8B3A2B] text-white rounded-3xl p-7 min-h-[580px] lg:min-h-[620px] flex flex-col justify-between transition-all duration-300 hover:scale-[0.98] shadow-lg relative overflow-hidden"
+            className="group bg-brand-red text-white rounded-3xl p-7 min-h-[580px] lg:min-h-[620px] flex flex-col justify-between transition-all duration-300 hover:scale-[0.98] shadow-lg relative overflow-hidden"
           >
             <div>
               <div className="flex items-center justify-between mb-4">

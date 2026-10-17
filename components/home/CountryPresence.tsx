@@ -57,7 +57,7 @@ const countries: CountryData[] = [
 
 export function CountryPresence() {
   return (
-    <section id="countries" className="py-24 bg-[#913729] text-white">
+    <section id="countries" className="py-24 bg-[#1C1612] text-white border-y border-[#C98A2C]/20">
       <div className="container mx-auto px-6 lg:px-12">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <span className="text-xs uppercase font-bold tracking-[0.25em] text-brand-amber font-oswald block mb-3">
@@ -135,7 +135,7 @@ export function CountryPresence() {
 
               <div className="mt-8 pt-4 border-t border-white/10 flex items-center justify-between text-xs text-white/60 font-oswald uppercase tracking-wider">
                 <span>Certified Fair For Life</span>
-                <span className="w-2 h-2 rounded-full bg-[#8BC832]" />
+                <span className="w-2 h-2 rounded-full bg-emerald-400" />
               </div>
             </div>
           ))}

@@ -7,7 +7,7 @@ import { ArrowUpRight } from "lucide-react";
 
 export function HighlightsBento() {
   return (
-    <section id="highlights" className="py-24 bg-[#F8F2EC]">
+    <section id="highlights" className="py-24 bg-brand-accent">
       <div className="container mx-auto px-6 lg:px-12">
         <div className="mb-12">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-red/10 text-brand-red text-xs font-semibold tracking-widest uppercase mb-3">
@@ -64,7 +64,7 @@ export function HighlightsBento() {
               <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent pointer-events-none" />
 
               <div className="relative z-10 text-white">
-                <span className="text-xs uppercase tracking-widest text-[#8BC832] font-bold font-oswald block mb-1">
+                <span className="text-xs uppercase tracking-widest text-emerald-400 font-bold font-oswald block mb-1">
                   Water Stewardship
                 </span>
                 <h4 className="text-xl lg:text-2xl font-oswald uppercase font-bold tracking-tight mb-2">

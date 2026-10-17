@@ -67,7 +67,7 @@ export function SustainabilityAccordion() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
           {/* Left Column: Yellow bar + Brand Narrative */}
           <div className="lg:col-span-5 flex flex-col justify-start">
-            <div className="w-20 h-2 bg-[#FFCC00] mb-6 rounded-full" />
+            <div className="w-20 h-2 bg-brand-amber mb-6 rounded-full" />
             
             <h2 className="text-4xl sm:text-5xl lg:text-6xl font-oswald uppercase font-black tracking-tight text-brand-red leading-[1.05] mb-6">
               Our Structural Principles of Sustainability
@@ -79,7 +79,7 @@ export function SustainabilityAccordion() {
               integrating ecological balance, female economic sovereignty, and commercial viability.
             </p>
 
-            <div className="p-6 rounded-2xl bg-[#F8F2EC] border border-[#D6B78F]/30 flex items-center gap-5">
+            <div className="p-6 rounded-2xl bg-brand-accent border border-brand-amber/30 flex items-center gap-5">
               <BrandLogo variant="color" className="h-16 w-auto shrink-0" />
               <div>
                 <h4 className="font-oswald uppercase text-base text-brand-brown font-bold tracking-tight">
@@ -101,7 +101,7 @@ export function SustainabilityAccordion() {
                   key={item.id}
                   className={`border transition-all duration-300 rounded-2xl overflow-hidden ${
                     isOpen
-                      ? "border-brand-brown bg-[#F8F2EC]/60 shadow-md"
+                      ? "border-brand-brown bg-brand-accent/60 shadow-md"
                       : "border-zinc-200 bg-white hover:border-zinc-300"
                   }`}
                 >

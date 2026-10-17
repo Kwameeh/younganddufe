@@ -38,7 +38,7 @@ export function Header({ variant = "transparent" }: HeaderProps) {
       <header
         className={`w-full z-50 transition-all duration-500 ${
           isSolid
-            ? "fixed top-0 left-0 bg-[#C6A376] text-white shadow-md py-3.5"
+            ? "fixed top-0 left-0 bg-[#1A1512]/95 backdrop-blur-md text-white shadow-xl border-b border-[#C98A2C]/20 py-3.5"
             : "absolute top-0 left-0 bg-transparent text-white py-6"
         }`}
       >
@@ -75,13 +75,13 @@ export function Header({ variant = "transparent" }: HeaderProps) {
                         <div className="absolute top-full left-0 w-56 bg-white text-zinc-800 shadow-2xl rounded-2xl py-3 z-50 border border-zinc-100 animate-in fade-in slide-in-from-top-1 duration-200">
                           <Link
                             href="/about/our-story"
-                            className="block px-5 py-2.5 hover:bg-[#F8F2EC] hover:text-brand-red transition-colors text-xs font-medium uppercase tracking-wider"
+                            className="block px-5 py-2.5 hover:bg-brand-accent hover:text-brand-red transition-colors text-xs font-medium uppercase tracking-wider"
                           >
                             Our Story
                           </Link>
                           <Link
                             href="/about/partners"
-                            className="block px-5 py-2.5 hover:bg-[#F8F2EC] hover:text-brand-red transition-colors text-xs font-medium uppercase tracking-wider"
+                            className="block px-5 py-2.5 hover:bg-brand-accent hover:text-brand-red transition-colors text-xs font-medium uppercase tracking-wider"
                           >
                             Partners
                           </Link>
@@ -103,13 +103,13 @@ export function Header({ variant = "transparent" }: HeaderProps) {
                         <div className="absolute top-full left-0 w-60 bg-white text-zinc-800 shadow-2xl rounded-2xl py-3 z-50 border border-zinc-100 animate-in fade-in slide-in-from-top-1 duration-200">
                           <Link
                             href="/products/shea-butter"
-                            className="block px-5 py-2.5 hover:bg-[#F8F2EC] hover:text-brand-red transition-colors text-xs font-medium uppercase tracking-wider"
+                            className="block px-5 py-2.5 hover:bg-brand-accent hover:text-brand-red transition-colors text-xs font-medium uppercase tracking-wider"
                           >
                             Shea Butter (Flagship)
                           </Link>
                           <Link
                             href="/products/shea-butter#export-specs"
-                            className="block px-5 py-2.5 hover:bg-[#F8F2EC] hover:text-brand-red transition-colors text-xs font-medium uppercase tracking-wider"
+                            className="block px-5 py-2.5 hover:bg-brand-accent hover:text-brand-red transition-colors text-xs font-medium uppercase tracking-wider"
                           >
                             Export Specifications
                           </Link>
@@ -131,13 +131,13 @@ export function Header({ variant = "transparent" }: HeaderProps) {
                         <div className="absolute top-full left-0 w-56 bg-white text-zinc-800 shadow-2xl rounded-2xl py-3 z-50 border border-zinc-100 animate-in fade-in slide-in-from-top-1 duration-200">
                           <Link
                             href="/impact/sustainability"
-                            className="block px-5 py-2.5 hover:bg-[#F8F2EC] hover:text-brand-red transition-colors text-xs font-medium uppercase tracking-wider"
+                            className="block px-5 py-2.5 hover:bg-brand-accent hover:text-brand-red transition-colors text-xs font-medium uppercase tracking-wider"
                           >
                             Sustainability
                           </Link>
                           <Link
                             href="/impact/biodiversity"
-                            className="block px-5 py-2.5 hover:bg-[#F8F2EC] hover:text-brand-red transition-colors text-xs font-medium uppercase tracking-wider"
+                            className="block px-5 py-2.5 hover:bg-brand-accent hover:text-brand-red transition-colors text-xs font-medium uppercase tracking-wider"
                           >
                             Biodiversity
                           </Link>
@@ -197,13 +197,13 @@ export function Header({ variant = "transparent" }: HeaderProps) {
                         <div className="absolute top-full left-1/2 -translate-x-1/2 w-56 bg-white text-zinc-800 shadow-2xl rounded-2xl py-3 z-50 border border-zinc-100 animate-in fade-in slide-in-from-top-1 duration-200">
                           <Link
                             href="/about/our-story"
-                            className="block px-5 py-2.5 hover:bg-[#F8F2EC] hover:text-brand-red transition-colors text-xs font-medium uppercase tracking-wider"
+                            className="block px-5 py-2.5 hover:bg-brand-accent hover:text-brand-red transition-colors text-xs font-medium uppercase tracking-wider"
                           >
                             Our Story
                           </Link>
                           <Link
                             href="/about/partners"
-                            className="block px-5 py-2.5 hover:bg-[#F8F2EC] hover:text-brand-red transition-colors text-xs font-medium uppercase tracking-wider"
+                            className="block px-5 py-2.5 hover:bg-brand-accent hover:text-brand-red transition-colors text-xs font-medium uppercase tracking-wider"
                           >
                             Partners
                           </Link>
@@ -225,13 +225,13 @@ export function Header({ variant = "transparent" }: HeaderProps) {
                         <div className="absolute top-full left-1/2 -translate-x-1/2 w-60 bg-white text-zinc-800 shadow-2xl rounded-2xl py-3 z-50 border border-zinc-100 animate-in fade-in slide-in-from-top-1 duration-200">
                           <Link
                             href="/products/shea-butter"
-                            className="block px-5 py-2.5 hover:bg-[#F8F2EC] hover:text-brand-red transition-colors text-xs font-medium uppercase tracking-wider"
+                            className="block px-5 py-2.5 hover:bg-brand-accent hover:text-brand-red transition-colors text-xs font-medium uppercase tracking-wider"
                           >
                             Shea Butter (Flagship)
                           </Link>
                           <Link
                             href="/products/shea-butter#export-specs"
-                            className="block px-5 py-2.5 hover:bg-[#F8F2EC] hover:text-brand-red transition-colors text-xs font-medium uppercase tracking-wider"
+                            className="block px-5 py-2.5 hover:bg-brand-accent hover:text-brand-red transition-colors text-xs font-medium uppercase tracking-wider"
                           >
                             Export Specifications
                           </Link>
@@ -253,13 +253,13 @@ export function Header({ variant = "transparent" }: HeaderProps) {
                         <div className="absolute top-full left-1/2 -translate-x-1/2 w-56 bg-white text-zinc-800 shadow-2xl rounded-2xl py-3 z-50 border border-zinc-100 animate-in fade-in slide-in-from-top-1 duration-200">
                           <Link
                             href="/impact/sustainability"
-                            className="block px-5 py-2.5 hover:bg-[#F8F2EC] hover:text-brand-red transition-colors text-xs font-medium uppercase tracking-wider"
+                            className="block px-5 py-2.5 hover:bg-brand-accent hover:text-brand-red transition-colors text-xs font-medium uppercase tracking-wider"
                           >
                             Sustainability
                           </Link>
                           <Link
                             href="/impact/biodiversity"
-                            className="block px-5 py-2.5 hover:bg-[#F8F2EC] hover:text-brand-red transition-colors text-xs font-medium uppercase tracking-wider"
+                            className="block px-5 py-2.5 hover:bg-brand-accent hover:text-brand-red transition-colors text-xs font-medium uppercase tracking-wider"
                           >
                             Biodiversity
                           </Link>

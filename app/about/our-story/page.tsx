@@ -15,7 +15,7 @@ export default function OurStoryPage() {
 
       <main className="flex-1">
         {/* 1. Hero Blueprint Banner */}
-        <section className="pt-28 pb-20 lg:pt-36 lg:pb-28 bg-[#F8F2EC] border-b border-zinc-200">
+        <section className="pt-28 pb-20 lg:pt-36 lg:pb-28 bg-brand-accent border-b border-zinc-200">
           <div className="container mx-auto px-6 lg:px-12 text-center max-w-5xl">
             <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-brand-red/10 text-brand-red text-xs font-semibold tracking-widest uppercase mb-6">
               <span className="w-2 h-2 rounded-full bg-brand-red"></span>
@@ -49,7 +49,7 @@ export default function OurStoryPage() {
                 </span>
               </div>
               <div className="bg-white/80 backdrop-blur-md px-6 py-4 rounded-2xl border border-zinc-200/80 shadow-xs flex items-center gap-3">
-                <span className="text-3xl font-oswald font-bold text-[#8BC832]">
+                <span className="text-3xl font-oswald font-bold text-brand-green">
                   10%
                 </span>
                 <span className="text-xs uppercase font-oswald tracking-wider text-zinc-600 text-left">
@@ -92,7 +92,7 @@ export default function OurStoryPage() {
         </section>
 
         {/* 3. Leadership & Governance Board */}
-        <section className="py-20 bg-[#F8F2EC] border-y border-zinc-200">
+        <section className="py-20 bg-brand-accent border-y border-zinc-200">
           <div className="container mx-auto px-6 lg:px-12">
             <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
               <div>
@@ -239,7 +239,7 @@ export default function OurStoryPage() {
 
               {/* Right Column: Photo */}
               <div className="lg:col-span-6 relative">
-                <div className="relative rounded-3xl overflow-hidden shadow-2xl aspect-[4/3] border-4 border-[#F8F2EC]">
+                <div className="relative rounded-3xl overflow-hidden shadow-2xl aspect-[4/3] border-4 border-brand-accent">
                   <Image
                     src="/about/about-story.jpg"
                     alt="Women cooperative assembly in Northern Ghana"

@@ -31,7 +31,7 @@ export function StorySection() {
 
         <h2 className="text-4xl sm:text-6xl lg:text-7xl font-oswald uppercase font-black text-white tracking-tighter leading-tight mb-8">
           The Story of <br />
-          <span className="text-[#F1BA40]">Generational Craft</span>
+          <span className="text-brand-amber">Generational Craft</span>
         </h2>
 
         <p className="text-white/85 font-outfit text-base lg:text-xl leading-relaxed mb-10 max-w-2xl mx-auto">
