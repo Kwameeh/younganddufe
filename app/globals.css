@@ -1,0 +1,45 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-accent: #F8F2EC;
+  --color-brand-red: #9D2D20;
+  --color-brand-brown: #775024;
+  --color-brand-tan: #D6B78F;
+  --color-brand-green: #8BC832;
+  --color-brand-darkgreen: #2D5016;
+  --color-brand-amber: #F5BD41;
+  --color-brand-caramel: #AB7E4A;
+  --color-brand-soil: #7E4E18;
+
+  --font-oswald: var(--font-oswald), sans-serif;
+  --font-outfit: var(--font-outfit), sans-serif;
+  --font-bobby: var(--font-bobby), sans-serif;
+}
+
+:root {
+  --background: #F8F2EC;
+  --foreground: #1A1A1A;
+}
+
+body {
+  background-color: #F8F2EC;
+  color: #1A1A1A;
+  font-family: var(--font-outfit), sans-serif;
+  overflow-x: hidden;
+}
+
+/* Custom marquee keyframes */
+@keyframes marquee {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  animation: marquee 35s linear infinite;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
